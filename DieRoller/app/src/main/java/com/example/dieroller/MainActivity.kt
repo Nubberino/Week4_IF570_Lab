@@ -2,6 +2,7 @@ package com.example.dieroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         val dic = Dice(6)
         val diceRoll = dic.roll()
 
-        val result: TextView = findViewById(R.id.textView)
-        result.text = diceRoll.toString()
+        val dicimage: ImageView = findViewById(R.id.imageView)
+       dicimage.setImageResource(R.drawable.dice_2)
     }
 
 
